@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from "./Components/Nav-bar/Navbar.js"
+import Navbar from "./Components/Navbar/Navbar.js"
+
+import router from './router.js';
 
 class App extends Component {
   render() {
     return (
-      <Navbar />
+      <div>
+        { router }
+      </div>
     )
   }
 }
