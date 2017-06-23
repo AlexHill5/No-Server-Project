@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import searchbar from "./searchbar.css"
+import React from 'react';
+import "./searchbar.css"
 
-class SearchBar extends Component {
-    render() {
-        return (
-        <div className="searchbar">
-            <input className="input-box" type="SEARCH FOR HEROES"/>
-            <button className="search-button"> Search </button>
+const SearchBar = (props) => {
+    return (
+         <div className="searchbar">
+            <input  type="text" className="form-control" placeholder="Enter Heroes" aria-describedby="basic-addon1" onChange={(e) => props.change(e) }/>
         </div>
-        );
-    }
-}
+    );
+};
 
 export default SearchBar;

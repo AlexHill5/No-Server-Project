@@ -1,4 +1,49 @@
-.main {
+
+
+.champion-display{
     display: flex;
-    flex-direction: column;
+    filter: alpha(opacity=50);
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+
+    }
+
+.zoom {      
+-webkit-transition: all 0.35s ease-in-out;    
+-moz-transition: all 0.35s ease-in-out;    
+transition: all 0.35s ease-in-out;     
+cursor: -webkit-zoom-in;      
+cursor: -moz-zoom-in;      
+cursor: zoom-in;  
+}     
+
+.zoom:hover,  
+.zoom:active,   
+.zoom:focus {
+-ms-transform: scale(2.0);    
+-moz-transform: scale(2.0);  
+-webkit-transform: scale(2.0);  
+-o-transform: scale(2.0);  
+transform: scale(1.5);    
+position:relative;      
+z-index:100;  
+}
+
+p {
+    align-self: center;
+    padding-left: 3%;
+    color: gold;
+    font-family: beaufort;
+}   
+
+h1{
+    color: gold;
+}
+
+
+
+.stats-text {
+    padding-left: 25%;
+    color: gold;
 }

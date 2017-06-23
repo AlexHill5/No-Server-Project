@@ -1,5 +1,13 @@
-html {
-  height: 100%;
-  width: 100%
+html body{
+
+  background-image: url('http://cdn.leagueoflegends.com/lolkit/1.1.6/resources/images/bg-default.jpg') !important;
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 

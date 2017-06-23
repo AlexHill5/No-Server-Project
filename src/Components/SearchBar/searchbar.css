@@ -6,9 +6,20 @@
 
 .input-box {
     margin-top: 2%;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
 }
 
 .search-button {
      height: 30px;
     margin-top: 2%;
+     -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.form-control {
+    width: 25%;
+    margin-top: 1%; 
 }
