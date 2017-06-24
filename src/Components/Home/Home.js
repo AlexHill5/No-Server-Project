@@ -7,7 +7,9 @@ import axios from 'axios'
 import SearchBar from '../SearchBar/SearchBar'
 import Navbar from '../Navbar/Navbar';
 import ChampionStats from './ChampionStats/ChampionStats'
+import Modale from './Modale/Modale'
 import './home.css'
+
 
 class Home extends Component {
     constructor() {
@@ -15,11 +17,13 @@ class Home extends Component {
 
         this.state = {
             champions: [],
-            userinput: ""
+            userinput: "",
         }
         this.handleInputChange = this.handleInputChange.bind(this);
        
     }
+
+
 
     componentDidMount() {
         const results = axios.get(`https://api.pandascore.co/lol/champions?token=ZmN26B-c2uTVOTlstvBHbhPUgW1iM51nM7QbskMaGbu8tcWIVgE`)
@@ -38,11 +42,9 @@ class Home extends Component {
         })
     }
 
- 
 
+    render(){
 
-        render() {
-            
             const championStats = this.state.champions.filter(
                 (champion) =>{
                     return champion.name.indexOf(this.state.userinput) !== -1 
@@ -66,7 +68,8 @@ class Home extends Component {
                 <div className = "main">
                     <Navbar title = "Champions" />
                     <SearchBar change={this.handleInputChange}/> 
-                    <h4 className="stats-text"> Level 1 stats  from {this.state.userinput} </h4> 
+                    
+                    <h4 className="stats-text"> Level 1 stats {this.state.userinput} </h4> 
                     { championStats} 
                 </div>
             );

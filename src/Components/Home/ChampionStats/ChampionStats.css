@@ -1,0 +1,10 @@
+.champ-name{
+    cursor: pointer
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+    padding: 18px;
+    color: white;
+}
