@@ -1,4 +1,5 @@
 import React from 'react';
+import {button} from 'react-bootstrap'
 
 class Modale extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class Modale extends React.Component {
       right: 0,
       backgroundColor: 'rgba(0,0,0,0.3)',
       padding: 100
+  
     };
 
     // The modal "window"
@@ -34,7 +36,7 @@ class Modale extends React.Component {
           {this.props.children}
 
           <div className="footer">
-            <button onClick={this.props.onClose}>
+            <button type="button" className="btn btn-info" onClick={this.props.onClose}>
               Close
             </button>
           </div>

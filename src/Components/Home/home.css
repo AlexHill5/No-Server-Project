@@ -34,20 +34,22 @@ z-index:100;
 .icon-helper {
     align-self: center;
     padding-left: 2%;
-    color: gold;
+    color: lightskyblue;
     display: flex;
-    
+  font-family: 'Cuprum', sans-serif
 }   
 
 h1{
-    color: gold;
+    color: lightskyblue;
+    font-family: 'Cuprum', sans-serif
 }
 
 
 
 .stats-text {
     padding-left: 25%;
-    color: gold;
+    color: lightskyblue;
+    font-family: 'Cuprum', sans-serif
 }
 
 

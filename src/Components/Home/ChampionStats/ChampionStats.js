@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 // import Modal, {closeStyle} from 'simple-react-modal'
 import "./ChampionStats.css"
 import Modale from '../Modale/Modale';
+import {button} from 'react-bootstrap'
 
 
 
