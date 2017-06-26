@@ -7,7 +7,7 @@ import "./ChampionStats.css"
 import Modale from '../Modale/Modale';
 import {button} from 'react-bootstrap'
 
-
+import Youtube from './Youtube/Youtube';
 
 
 
@@ -39,9 +39,11 @@ class ChampionStats extends Component {
                             <div className="App">
 
 
-                                <Modale show={this.state.isOpen}
-                                onClose={this.toggleModal}>
-                                    <img className="nav-gif" src="https://media.giphy.com/media/UHF73yPwq4ABW/giphy.gif" />                                                                        
+                                <Modale show={this.state.isOpen} onClose={this.toggleModal}>
+                                    <img className="nav-gif" src="https://media.giphy.com/media/UHF73yPwq4ABW/giphy.gif" />   
+                                    <div >
+                                        <Youtube />
+                                    </div>                                                                    
                                 </Modale>
                             </div>
 

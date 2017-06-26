@@ -25,7 +25,7 @@ class Modale extends React.Component {
       backgroundColor: '#A9A9A9',
       borderRadius: 5,
       maxWidth: 500,
-      minHeight: 300,
+      minHeight: 400,
       margin: '0 auto',
       padding: 30
     };
