@@ -42,11 +42,11 @@ class ChampionStats extends Component {
                             </div>
 
            <div className="icon-helper"> <p>  Health: {this.props.health} </p> <img className="icons" src={require("./icons/heart-icon.png")} />  </div>
-            <div className="icon-helper"> <p> Armor: {this.props.armor}</p> <img className="icons" src={require("./icons/armor-icon.png")} /> </div>
-             <div className="icon-helper"><p>  Attack-Damage: {this.props.attack}</p>  <img className="icons" src={require("./icons/swords.png")}/> </div>
-             <div className="icon-helper"><p>  Magic-Power: {this.props.magic}</p>  <img className="icons" src={require("./icons/flame.png")} /></div>
+            <div className="icon-helper"> <p> Armor: {this.props.armor}</p> <img className="icons" src={require("./icons/red-shield.png")} /> </div>
+             <div className="icon-helper"><p>  Attack-Damage: {this.props.attack}</p>  <img className="icons" src={require("./icons/color-swords.png")}/> </div>
+             <div className="icon-helper"><p>  Magic-Power: {this.props.magic}</p>  <img className="icons" src={require("./icons/orange-flame.png")} /></div>
              <div className="icon-helper"><p> Attack-Range: {this.props.range}  </p> <img className="icons" src={require("./icons/binoculars.png")} /></div>
-             <div className="icon-helper"><p> Movement-Speed: {this.props.speed}</p>  <img className="icons" src={require("./icons/urgency.png")} /></div>
+             <div className="icon-helper"><p> Movement-Speed: {this.props.speed}</p>  <img className="icons" src={require("./icons/urgency-color.png")} /></div>
             </div>
         </div>
     );
