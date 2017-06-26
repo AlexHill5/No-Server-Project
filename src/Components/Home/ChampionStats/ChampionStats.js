@@ -17,22 +17,8 @@ class ChampionStats extends Component {
     super(props);
 
     this.state = { isOpen: false,
-                    giphy: []
  };
   }
-
-
-
-    componentDidMount() {
-        const results = axios.get(`https://api.giphy.com/v1/gifs/random?api_key=bc54f70ad4724c1f85f8a8d35a936a06&tag=&rating=G`)
-            .then(res => res.data)
-            .then((finalResult) => {
-                this.setState({
-                    giphy: finalResult
-                });
-                console.log(this.state)
-            });
-    }
 
 
   toggleModal = () => {
@@ -55,7 +41,7 @@ class ChampionStats extends Component {
 
                                 <Modale show={this.state.isOpen}
                                 onClose={this.toggleModal}>
-                                    <img className="nav-gif" src="https://media.giphy.com/media/UHF73yPwq4ABW/giphy.gif" />
+                                    <img className="nav-gif" src="https://media.giphy.com/media/UHF73yPwq4ABW/giphy.gif" />                                                                        
                                 </Modale>
                             </div>
 

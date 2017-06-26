@@ -8,6 +8,7 @@ import SearchBar from '../SearchBar/SearchBar'
 import Navbar from '../Navbar/Navbar';
 import ChampionStats from './ChampionStats/ChampionStats'
 import Modale from './Modale/Modale'
+import apiKey from '../.././apiKey.js'
 import './home.css'
 
 
@@ -26,7 +27,7 @@ class Home extends Component {
 
 
     componentDidMount() {
-        const results = axios.get(`https://api.pandascore.co/lol/champions?token=ZmN26B-c2uTVOTlstvBHbhPUgW1iM51nM7QbskMaGbu8tcWIVgE`)
+        const results = axios.get(`https://api.pandascore.co/lol/champions?${apiKey}`)
             .then(res => res.data)
             .then((finalResult) => {
                 this.setState({
