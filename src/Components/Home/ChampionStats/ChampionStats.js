@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import axios from 'axios'
 // import Modals from '../Modale/Modale'
 // import Modal, {closeStyle} from 'simple-react-modal'
 import "./ChampionStats.css"
@@ -14,8 +16,24 @@ class ChampionStats extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false };
+    this.state = { isOpen: false,
+                    giphy: []
+ };
   }
+
+
+
+    componentDidMount() {
+        const results = axios.get(`https://api.giphy.com/v1/gifs/random?api_key=bc54f70ad4724c1f85f8a8d35a936a06&tag=&rating=G`)
+            .then(res => res.data)
+            .then((finalResult) => {
+                this.setState({
+                    giphy: finalResult
+                });
+                console.log(this.state)
+            });
+    }
+
 
   toggleModal = () => {
     this.setState({
@@ -45,7 +63,7 @@ class ChampionStats extends Component {
             <div className="icon-helper"> <p> Armor: {this.props.armor}</p> <img className="icons" src={require("./icons/red-shield.png")} /> </div>
              <div className="icon-helper"><p>  Attack-Damage: {this.props.attack}</p>  <img className="icons" src={require("./icons/color-swords.png")}/> </div>
              <div className="icon-helper"><p>  Magic-Power: {this.props.magic}</p>  <img className="icons" src={require("./icons/orange-flame.png")} /></div>
-             <div className="icon-helper"><p> Attack-Range: {this.props.range}  </p> <img className="icons" src={require("./icons/binoculars.png")} /></div>
+             <div className="icon-helper"><p> Attack-Range: {this.props.range}  </p> <img className="icons" src={require("./icons/yellow-binoc.png")} /></div>
              <div className="icon-helper"><p> Movement-Speed: {this.props.speed}</p>  <img className="icons" src={require("./icons/urgency-color.png")} /></div>
             </div>
         </div>

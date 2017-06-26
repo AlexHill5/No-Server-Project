@@ -6,6 +6,7 @@
     -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 100%;
 
     }
 
@@ -36,7 +37,8 @@ z-index:100;
     padding-left: 2%;
     color: lightskyblue;
     display: flex;
-  font-family: 'Cuprum', sans-serif
+  font-family: 'Cuprum', sans-serif;
+  justify-content: center;
 }   
 
 h1{
